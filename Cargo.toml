@@ -1,0 +1,31 @@
+[package]
+name = "boost_date_time"
+description = "Boost C++ library boost_date_time packaged using Zanbil"
+version = "0.1.0"
+edition = "2024"
+links = "boost_date_time"
+license = "BSL-1.0"
+repository = "https://github.com/zanbilify/boost_date_time"
+
+[package.metadata.zanbil]
+make_dependencies_public = true
+
+[dependencies]
+boost_algorithm = { version = "0.1.0", path = "../boost_algorithm" }
+boost_assert = { version = "0.1.0", path = "../boost_assert" }
+boost_config = { version = "0.1.0", path = "../boost_config" }
+boost_core = { version = "0.1.0", path = "../boost_core" }
+boost_io = { version = "0.1.0", path = "../boost_io" }
+boost_lexical_cast = { version = "0.1.0", path = "../boost_lexical_cast" }
+boost_numeric_conversion = { version = "0.1.0", path = "../boost_numeric_conversion" }
+boost_range = { version = "0.1.0", path = "../boost_range" }
+boost_smart_ptr = { version = "0.1.0", path = "../boost_smart_ptr" }
+boost_static_assert = { version = "0.1.0", path = "../boost_static_assert" }
+boost_throw_exception = { version = "0.1.0", path = "../boost_throw_exception" }
+boost_tokenizer = { version = "0.1.0", path = "../boost_tokenizer" }
+boost_type_traits = { version = "0.1.0", path = "../boost_type_traits" }
+boost_utility = { version = "0.1.0", path = "../boost_utility" }
+boost_winapi = { version = "0.1.0", path = "../boost_winapi" }
+
+[build-dependencies]
+zanbil-boost-build = "0.1.0"
